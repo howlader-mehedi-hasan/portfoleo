@@ -1,60 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Howlader Mehedi Hanan</title>
-    <style>
-        
-    </style>
-    <link rel="stylesheet" href="web.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta name="description" content="Portfolio of Howlader Mehedi Hasan - Software Developer, Programmer & Designer">
+  <meta name="author" content="Howlader Mehedi Hasan">
+  <meta property="og:title" content="Howlader Mehedi Hasan">
+  <meta property="og:description" content="Personal portfolio website of a passionate CSE student and developer.">
+  <meta property="og:image" content="me.jpg">
+
+  <link rel="stylesheet" href="web.css" />
+  <!-- <link rel="script" href="web.js" /> -->
+
+  <title>Howlader Mehedi Hasan</title>
+  <link rel="icon" href="me.jpg" type="image/png" />
+  <link rel="shortcut icon" href="me.jpg" type="image/png" />
+
+  <style>
+  </style>
 </head>
+
+
 <body>
-    <header>
+  <header>
+    <div class="header-content">
+      <img src="me.jpg" alt="Portrait of Howlader Mehedi Hasan" class="logo" />
+      <div class="title-section">
         <h1>Howlader Mehedi Hasan</h1>
-        <p>Web Developer | Programmer | Designer</p>
-    </header>
-    <div class="container">
-        <div class="column">
-            <h2>About Me</h2>
-            <img src="me.jpg" alt="Your Photo">
-            <p>Hello! I'm Howlader Mehedi Hasan, a passionate web developer with experience in creating dynamic and responsive websites. I love coding and designing user-friendly interfaces.</p>
-        </div>
-        <div class="column">
-            <h2>Skills</h2>
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>React</li>
-                <li>Node.js</li>
-                <li>xml</li>
-                <li>C</li>
-                <li>C++</li>
-                <li>Java</li>
-                <li>Python</li>
-                <li>PHP</li>
-                <li>Latavel</li>
-                <li>C#</li>
-            </ul>
-            <h2>Experience</h2>
-            <ul>
-                <li><strong>Company 1:</strong> Role and duration</li>
-                <li><strong>Company 2:</strong> Role and duration</li>
-                <li><strong>Company 3:</strong> Role and duration</li>
-            </ul>
-        </div>
-        <div class="column">
-            <h2>Contact</h2>
-            <p>Email: your.email@example.com</p>
-            <p>Phone: (123) 456-7890</p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/howlader-mh/">yourprofile</a></p>
-            <p>GitHub: <a href="https://github.com/howlader-mehedi-hasan">Howlader</a></p>
-            <p>CodeForce: <a href="https://codeforces.com/profile/Howlader">Howlader</a></p>
-        </div>
+        <p>Software Developer | Programmer | Designer</p>
+      </div>
+      <nav class="navbar">
+        <!-- <div  class="menu-toggle" id="menuToggle"></div> -->
+        <button id="menuBar" onclick="handleOnMenu()">☰</button>
+        <ul class="nav-links " id="navLinks">
+          <li><button class="dark-toggle" id="themeToggle" onclick="toggleDarkMode()">🌙</button></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="cv.jpg" download>Resume</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+
+      </nav>
+
     </div>
-    <footer>
-        <p>&copy; 2025 Howlader Mehedi Hanan. All rights reserved.</p>
-    </footer>
+
+  </header>
+
+  <div class="container">
+    <div class="column" id="myself">
+      <img src="me.jpg" alt="Portrait of Howlader Mehedi Hasan" />
+    </div>
+
+    <div class="column" id="about">
+      <h2>About Me</h2>
+      <p>Hello! I'm Howlader Mehedi Hasan, a passionate web developer with experience in creating dynamic and responsive
+        websites. I love coding and designing user-friendly interfaces.</p>
+    </div>
+
+    <div class="column" id="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>HTML, CSS, JavaScript</li>
+        <li>React, Node.js</li>
+        <li>PHP, Laravel</li>
+        <li>Java, C, C++, C#</li>
+        <li>Python, XML</li>
+      </ul>
+    </div>
+
+    <div class="column">
+      <h2>Experience</h2>
+      <ul>
+        <li>Internet Service Provider at <br> <strong>GNS</strong> </li>
+        <li>Mentorship <br> <strong>Aset skill BD</strong> </li>
+        <li>Teaching <br> at <strong>Coatching center</strong></li>
+      </ul>
+    </div>
+
+    <div class="column" id="contact">
+      <h2>Contact</h2>
+      <p><strong>Email:</strong> <a href="mailto:hmh.cse@gmail.com">hmh.cse@gmail.com</a></p>
+      <p><strong>Phone:</strong> <a href="tel:+8801648291385">01648 291385</a></p>
+      <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/howlader-mh/" target="_blank">Howlader Mehedi
+          Hasan</a></p>
+      <p><strong>GitHub:</strong> <a href="https://github.com/howlader-mehedi-hasan"
+          target="_blank">howlader-mehedi-hasan</a></p>
+      <p><strong>Codeforces:</strong> <a href="https://codeforces.com/profile/Howlader" target="_blank">Howlader</a></p>
+    </div>
+
+    <div class="column">
+      <h2>Educational Qualification</h2>
+      <ul>
+        <li><strong>BSc in Computer Science & Engineering</strong><br />
+          North Western University, Khulna<br />
+          2023 - Present
+        </li>
+        <li><strong>HSC (Science)</strong><br />
+          Govt. Brojolal College, Khulna (Jessore Board)<br />
+          Year of Passing: 2021
+        </li>
+        <li><strong>SSC (Science)</strong><br />
+          Baintala Kashipur Secondary School (Jessore Board)<br />
+          Year of Passing: 2019
+        </li>
+      </ul>
+    </div>
+
+    <div class="column" id="projects">
+      <h2>Projects</h2>
+      <ul>
+        <li><strong>Student Result Management System</strong> – Built using PHP & MySQL</li>
+        <li><strong>Portfolio Website</strong> – This very responsive website with dark mode</li>
+        <li><strong>Weather App</strong> – JavaScript + OpenWeatherMap API</li>
+        <li><strong>Android Calculator</strong> – Created using Java & XML</li>
+        <li><strong>Task Manager (CLI)</strong> – Made with Python</li>
+      </ul>
+    </div>
+
+    <div class="column" id="contact-form">
+      <h2>Contact Me</h2>
+      <form action="mailto:hmh.cse@gmail.com" method="post" enctype="text/plain">
+        <label for="name">Name:</label><br />
+        <input type="text" id="name" name="name" required style="width: 95%; padding: 8px;" /><br /><br />
+
+        <label for="email">Email:</label><br />
+        <input type="email" id="email" name="email" required style="width: 95%; padding: 8px;" /><br /><br />
+
+        <label for="message">Message:</label><br />
+        <textarea id="message" name="message" rows="5" required
+          style="width: 95%; padding: 8px;"></textarea><br /><br />
+
+        <input id="submit" type="submit" value="Send Message"
+          style="background-color: var(--header-bg); color: var(--header-text); padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;" />
+      </form>
+    </div>
+
+  </div>
+
+
+  <footer>
+    <p>&copy; 2025 Howlader Mehedi Hasan. All rights reserved.</p>
+    <p>
+      <a href="#about">About</a> |
+      <a href="#skills">Skills</a> |
+      <a href="#contact">Contact</a>
+    </p>
+  </footer>
+
+
+  <script src="web.js"></script>
+
 </body>
+
 </html>
