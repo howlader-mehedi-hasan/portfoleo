@@ -203,18 +203,12 @@
   nav li {
     display: flex;
     justify-content: center;
-    padding: auto;
-    margin: 5%;
   }
   nav li a {
-    padding: 0.5rem 1rem;
-    border: 1px solid var(--text-color);
-    border-radius: 20px;
     transition: background-color 0.3s, color 0.3s;
   }
   nav ul {
     border-radius: 20px;
-    padding: 5%;
   }
 
 
